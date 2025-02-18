@@ -1,0 +1,257 @@
+/* General About Us Section */
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: greenyellow; 
+    color: #333;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Slides */
+.slide {
+    display: none;
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Caption */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade Animation */
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links li a {
+    font-weight: 500;
+    padding: 10px 20px;
+    color: #333;
+    transition: all 0.3s;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.navbar-links li a:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    color:black;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens */
+@media (max-width: 768px) {
+    .about-us h2 {
+        font-size: 2rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slideshow-container {
+        width: 95%;
+    }
+
+    .prev, .next {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+
+/* For very small screens (e.g., mobile portrait) */
+@media (max-width: 480px) {
+    .about-us h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-us p {
+        font-size: 0.9rem;
+    }
+
+    .prev, .next {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .navbar-links li a {
+        font-size: 0.9rem;
+    }
+}
+/* General About Us Section */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    color: #444;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* Address Section */
+.address {
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Gives a slight background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.address h3 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.address p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}

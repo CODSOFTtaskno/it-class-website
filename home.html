@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Class - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar-logo">
+            <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="IT Class Logo">
+        </a>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Bright Your Future with IT Skills</h1>
+        <p>Join us to master in-demand tech skills and advance your career. Explore our world-class courses today.</p>
+        <a href="/courses" class="btn-primary">Browse Courses</a>
+    </section>
+    <section class="featured-courses">
+        <h2>Our Featured Courses</h2>
+        <div class="courses-container">
+            <div class="course-card">
+                <h3>Data Science & AI</h3>
+                <p>Unlock the power of data with our Data Science & AI course. Learn to analyze and predict with machine learning algorithms.</p>
+                <a href="/courses" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Build beautiful and functional websites with HTML, CSS, and JavaScript. Learn the tools of the trade for modern web development.</p>
+                <a href="/courses" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="course-card">
+                <h3>Full Stack Development</h3>
+                <p>Master both front-end and back-end technologies to become a versatile full-stack developer and build scalable web apps.</p>
+                <a href="/courses" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 IT Daksh. All Rights Reserved | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>

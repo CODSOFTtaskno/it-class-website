@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='enroll.css') }}">
+    <title>Enroll in {{ course.name }}</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Enroll in {{ course.name }}</h1>
+        <p>Fill out the form below to complete your enrollment.</p>
+        <form method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <button type="submit">Submit Enrollment</button>
+        </form>
+        <div class="footer">
+            <p>
+                By enrolling, you agree to our 
+                <a href="/privacy-policy">Privacy Policy</a> and 
+                <a href="/terms-conditions">Terms & Conditions</a>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

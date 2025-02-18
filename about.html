@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - IT Class</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar-logo">
+            <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="IT Class Logo">
+        </a>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+    <section class="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to IT Daksh! We are passionate about empowering individuals with the skills they need to excel in tech.</p>
+    <p>Here's a glimpse of our journey and community:</p>
+        
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="{{ url_for('static', filename='1.jpg') }}" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="{{ url_for('static', filename='2.jpg') }}" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="{{ url_for('static', filename='1.jpg') }}" alt="Slide 1">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+</section>
+    <section class="address">
+            <h3>Our Address</h3>
+            <p>
+                ADDRESS: ITdaksh Education Thane<br>
+                201 Ganesh Tower, Dada Patil Wadi, Opposite Thane Railway Station,<br>
+                Thane(w), 400602.<br>
+                EMAIL ID:<br>
+                contact@itdaksh.com<br>
+                FOR COURSE CONTACT NUMBER:<br>
+                +91 8591-434-628
+            </p>
+        </section>
+         <script src="{{ url_for('static', filename='slideshow.js') }}"></script>
+    <footer>
+        <p>&copy; 2025 IT Daksh. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <title>IT Class - Contact</title>
+<body>
+    <header class="courses-header">
+        <h1>Our Courses</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <h1>Contact Us</h1>
+        <form class="contact-form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 IT Daksh. All Rights Reserved | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a></p>
+    </footer>
+</body>
+</html>
+
